@@ -1,0 +1,27 @@
+{% extends 'basic.html' %}
+{% block title%}All Songs  {% endblock %}
+{% load static %}
+{% block body %}
+
+
+
+<div class="container">
+    <div class="row">
+     {% for i in song %}
+        <div class="col-md-6" style = "padding-top: 2%; padding-left: 6%; padding-top: 15%;">
+            <img src="/media/{{i.image}}" alt="" height="300px">
+        </div>
+
+        <div class="col-md-6" style = "padding-top: 15%;">
+            <h2 style="padding-top: 6%; font-weight: 550; ">SongName: {{i.name}}</h2>
+            <h5 style="padding-top: 2%; font-weight: 550;">Movie: {{i.movie}}</h5>
+            <h5 style="padding-top: 2%; font-weight: 550;">Singer: {{i.singer}}</h5>
+            <audio controls >
+                <source src="/media/{{i.song}}" type="audio/mp3">
+            </audio>
+        </div>
+    {% endfor %}
+
+    </div>
+</div>
+{% endblock %}
