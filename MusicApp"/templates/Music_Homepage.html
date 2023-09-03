@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Website</title>
+    <!-- magnific-popup css cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <!-- font-awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- custom css link -->
+    <link rel="stylesheet" href="{% static 'css\Music_Homepage.css' %}">
+</head>
+<body style="background-image: url('{% static 'image\bg1.avif' %}');
+background-position: center;
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: cover;">
+
+    
+
+    <!-- header -->
+
+    <header class="header">
+
+        <a href="#" class="logo"> <i class="fas fa-music"></i> music</a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#artist">artist</a>
+            <a href="#gallery">gallery</a>
+            <a href="#blog">blogs</a>
+            <a href="/register_page/">Signup</a>
+            <a href="/login_page/">Login</a>
+        </nav>
+
+        <div id="menu" class="fas fa-bars"></div>
+
+    </header>
+
+    <!-- end -->
+
+    <!-- home -->
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>get the <br> new songs</h3>
+            <a href="#" class="btn">Listen Song</a>
+        </div>
+
+    </section>
+
+    <!-- end -->
+
+
+    <!-- artist -->
+
+    <section class="artist" id="artist">
+
+        <h1 class="heading">the artist</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <img src="{% static 'image\1.jpg'%}">
+                    <div class="share">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h5>Sonu Nigam</h5>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="{% static 'image\2.jpg'%}">
+                    <div class="share">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h5>Sunada Sharma</h5>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="{% static 'image\3.jpg'%}">
+                    <div class="share">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h5>Neha Kakkar</h5>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="{% static 'image\4.jpg' %}">
+                    <div class="share">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h5>Sunidhi Chauhan</h5>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="{% static 'image\5.jpg' %}">
+                    <div class="share">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h5>Arijit Singh</h5>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="{% static 'image\6.jpg'%}">
+                    <div class="share">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h5>Sunada Chauhan</h5>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- end -->
+
+    <!-- gallery -->
+
+    <section class="gallery" id="gallery">
+
+        <h1 class="heading">our gallery</h1>
+
+        <ul class="controls">
+            <li class="button active" data-filter="all">all</li>
+            <li class="button" data-filter="music">music</li>
+            <li class="button" data-filter="party">party</li>
+            <li class="button" data-filter="performance">performance</li>
+            <li class="button" data-filter="stageshow">stage show</li>
+        </ul>
+
+        <div class="box-container">
+
+
+            <a href="image/gallery-4.jpg" class="image music">
+                <img src="{% static 'image/gallery4.jpeg' %}" alt="">
+            </a>
+
+            <a href="image/gallery6.jpg" class="image music">
+                <img src="{% static 'image/gallery6.avif' %}" alt="">
+            </a>
+
+            <a href="image/gallery3.jpg" class="image party">
+                <img src="{% static 'image/gallery3.jpeg' %}" alt="">
+            </a>
+
+            <a href="image/gallery5.jpg" class="image party">
+                <img src="{% static 'image/gallery5.jpeg' %}" alt="">
+            </a>
+
+            <a href="image/gallery1.jpg" class="image performance">
+                <img src="{% static 'image/gallery1.jpeg' %}" alt="">
+            </a>
+
+            <a href="image/gallery2.jpg" class="image performance">
+                <img src="{% static 'image/gallery2.jpeg' %}" alt="">
+            </a>
+
+            <a href="image/gallery6.jpg" class="image stageshow">
+                <img src="{% static 'image/gallery6.avif' %}" alt="">
+            </a>
+
+            <a href="image/gallery3.jpg" class="image stageshow">
+                <img src="{% static 'image/gallery3.jpeg' %}" alt="">
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- end -->
+
+    <!-- blog -->
+
+    <section class="blog" id="blog">
+
+        <h1 class="heading">our blogs</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <img src="{% static 'image/music.jpg' %}" alt="">
+                </div>
+                <div class="content">
+                    <h3>late night show</h3>
+                    <div class="icons">
+                        <a href="#"><i class="fas fa-calendar"></i> 23rd january 2023</a>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, voluptate.</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="{% static 'image/bg image.avif' %}" alt="">
+                </div>
+                <div class="content">
+                    <h3>late night show</h3>
+                    <div class="icons">
+                        <a href="#"><i class="fas fa-calendar"></i> 23rd january 2023</a>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, voluptate.</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="{% static 'image/blog_image3.avif' %}" alt="">
+                </div>
+                <div class="content">
+                    <h3>late night show</h3>
+                    <div class="icons">
+                        <a href="#"><i class="fas fa-calendar"></i> 23rd january 2023</a>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, voluptate.</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- end -->
+
+
+
+    <!-- subscribe -->
+
+    <section class="subscribe">
+
+        <div class="row">
+            <div class="content">
+                <p>subscribe to the newsletter</p>
+            </div>
+
+            <div class="inputBox">
+                <input type="email" class="email" placeholder="Your email">
+                <input type="button" value="subscribe" class="btn">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- end -->
+
+    <!-- footer -->
+
+    <section class="footer">
+
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f facebook-icon"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-twitter twitter-icon"></a>
+            <a href="#" class="fab fa-linkedin linkedin-icon"></a>
+        </div>
+
+        <div class="credit">created by <span>Rock Music</span> | all rights reserved!</div>
+
+    </section>
+
+
+    <!-- end -->
+
+
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- magnific popup js cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="{% static 'js\Music_Homepage.js' %}"></script>
+</body>
+</html>
